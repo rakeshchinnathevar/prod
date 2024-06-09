@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage("GitCheckout"){
+            steps{
+                git 'https://github.com/rakeshchinnathevar/prod.git'
+            }
+        }
+    }
+}
